@@ -1,0 +1,14 @@
+{
+  "name": "clinic-visit-records",
+  "version": "1.0.0",
+  "private": true,
+  "description": "医院信息系统课程就诊记录实验项目",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "VIS-2026-001",
+    "patientName": "陈晨",
+    "gender": "女",
+    "age": 32,
+    "department": "呼吸内科",
+    "doctor": "李医生",
+    "diagnosis": "上呼吸道感染",
+    "visitTime": "2026-09-26 09:20",
+    "symptoms": "咽痛、咳嗽两天，无明显呼吸困难。",
+    "advice": "按医嘱用药，多饮水，症状加重及时复诊。"
+  },
+  {
+    "id": "VIS-2026-002",
+    "patientName": "王宁",
+    "gender": "男",
+    "age": 45,
+    "department": "心内科",
+    "doctor": "周医生",
+    "diagnosis": "高血压随访",
+    "visitTime": "2026-09-27 14:10",
+    "symptoms": "居家血压偶有升高，无胸闷胸痛。",
+    "advice": "继续监测血压，低盐饮食，四周后复诊。"
+  },
+  {
+    "id": "VIS-2026-003",
+    "patientName": "赵可",
+    "gender": "女",
+    "age": 27,
+    "department": "皮肤科",
+    "doctor": "孙医生",
+    "diagnosis": "接触性皮炎",
+    "visitTime": "2026-09-28 10:45",
+    "symptoms": "双手红斑伴轻度瘙痒。",
+    "advice": "避免可疑接触物，按医嘱外用药物。"
+  },
+  {
+    "id": "VIS-2026-004",
+    "patientName": "刘安",
+    "gender": "男",
+    "age": 8,
+    "department": "儿科",
+    "doctor": "吴医生",
+    "diagnosis": "急性胃肠炎",
+    "visitTime": "2026-09-29 08:35",
+    "symptoms": "腹泻一天，精神状态尚可。",
+    "advice": "少量多次补液，观察尿量与精神状态。"
+  }
+]
