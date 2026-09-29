@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>门诊就诊记录</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">+</div>
+    <div>
+      <p class="eyebrow">HOSPITAL INFORMATION SYSTEM</p>
+      <h1>门诊就诊记录</h1>
+    </div>
+    <div class="status"><span></span>系统运行正常</div>
+  </header>
+
+  <main>
+    <section class="summary" aria-label="就诊数据概览">
+      <div><strong id="totalCount">--</strong><span>记录总数</span></div>
+      <div><strong id="departmentCount">--</strong><span>涉及科室</span></div>
+      <div><strong id="todayCount">--</strong><span>今日就诊</span></div>
+    </section>
+
+    <section class="workspace">
+      <div class="toolbar">
+        <div>
+          <p class="section-label">VISIT MANAGEMENT</p>
+          <h2>就诊记录列表</h2>
+        </div>
+        <form id="filters" class="filters">
+          <label>
+            <span>搜索</span>
+            <input id="keyword" type="search" placeholder="患者、诊断或医生">
+          </label>
+          <label>
+            <span>科室</span>
+            <select id="department">
+              <option value="">全部科室</option>
+            </select>
+          </label>
+          <button type="submit">查询</button>
+        </form>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>就诊编号</th>
+              <th>患者</th>
+              <th>科室</th>
+              <th>诊断</th>
+              <th>就诊时间</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody id="visitRows"></tbody>
+        </table>
+        <div id="emptyState" class="empty" hidden>没有符合条件的就诊记录</div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog">
+    <div class="dialog-head">
+      <div>
+        <p class="section-label">VISIT DETAIL</p>
+        <h2>就诊详情</h2>
+      </div>
+      <button id="closeDialog" class="icon-button" aria-label="关闭">×</button>
+    </div>
+    <div id="detailContent"></div>
+  </dialog>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
+
