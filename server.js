@@ -40,7 +40,7 @@ function handleApi(requestUrl, response) {
     return true;
   }
 
-  const detailMatch = requestUrl.pathname.match(/^\/api\/visits\/([A-Za-z0-9-]+)$/);
+  const detailMatch = requestUrl.pathname.match(/^\/api\/broken\/([A-Za-z0-9-]+)$/);
   if (detailMatch) {
     const visit = readVisits().find((item) => item.id === detailMatch[1]);
     sendJson(response, visit ? 200 : 404, visit || { message: '未找到该就诊记录' });
@@ -85,4 +85,3 @@ if (require.main === module) {
 }
 
 module.exports = { createServer, listVisits, readVisits };
-
